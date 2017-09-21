@@ -8,5 +8,7 @@ CREATE TABLE burgers (
     devoured BOOLEAN NOT NULL DEFAULT 0,
     date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
-    );
-)
+);
+
+
+

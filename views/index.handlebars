@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Burgers</title>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
-</html>
+
+<h1>Eat Da Burger</h1>
+
+
+	{{#each burgers}}
+		
+  			<p>ID: {{this.id}}. {{this.burger_name}}</p>
+  	
+	{{/each}}
+
+
+<div>
+	<form action="/" method="POST">
+		<textarea type="text" name="burger_name"></textarea>
+		<h3>Type in the name of a burger that you would like to devour!</h3>
+  		<button type="submit">Submit</button>
+	</form>
+</div>
